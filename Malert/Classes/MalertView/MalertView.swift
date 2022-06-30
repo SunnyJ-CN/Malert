@@ -21,6 +21,8 @@ public class MalertView: UIView {
     private var _buttonsSeparetorColor: UIColor = UIColor(white: 0.8, alpha: 1)
     private var _buttonsFont: UIFont = UIFont.systemFont(ofSize: 16)
     
+    private var outSet: CGFloat = 16
+    
     private var inset: CGFloat = 0 {
         didSet { refreshViews() }
     }
@@ -229,6 +231,12 @@ extension MalertView {
     @objc public dynamic var buttonsAxis: NSLayoutConstraint.Axis {
         get { return buttonsStackView.axis }
         set { buttonsStackView.axis = newValue }
+    }
+    
+    /// Margin outset to leading and trailing
+    @objc public dynamic var landscapeMargin: CGFloat {
+        get { return outSet }
+        set { outSet = newValue }
     }
     
     /// Margin inset to titleLabel and CustomView

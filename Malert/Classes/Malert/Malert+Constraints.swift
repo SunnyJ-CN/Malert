@@ -44,8 +44,8 @@ extension Malert {
         return [
             malertView.centerXAnchor.constraint(equalTo: visibleView.centerXAnchor),
             malertView.centerYAnchor.constraint(equalTo: visibleView.centerYAnchor),
-            malertView.trailingAnchor.constraint(equalTo: visibleView.safeAreaLayoutGuide.trailingAnchor, constant: -16),
-            malertView.leadingAnchor.constraint(equalTo: visibleView.safeAreaLayoutGuide.leadingAnchor, constant: 16)
+            malertView.trailingAnchor.constraint(equalTo: visibleView.safeAreaLayoutGuide.trailingAnchor, constant: -landscapeMargin),
+            malertView.leadingAnchor.constraint(equalTo: visibleView.safeAreaLayoutGuide.leadingAnchor, constant: landscapeMargin)
         ]
     }
     

@@ -114,6 +114,11 @@ extension Malert {
     }
     
     /* Container config */
+    public var landscapeMargin: CGFloat {
+        get { return malertView.landscapeMargin }
+        set { malertView.landscapeMargin = newValue }
+    }
+    
     public var margin: CGFloat {
         get { return malertView.margin }
         set { malertView.margin = newValue }
